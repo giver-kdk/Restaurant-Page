@@ -1,7 +1,7 @@
 /* Header Section with Navigation Bar*/
 .container {
 	width: 100%;
-	height: 1650px;
+	/* height: 1650px; */
   }
 header {
 	position: absolute;
@@ -57,24 +57,15 @@ header {
 	line-height: 30px;
 	margin-top: 160px;
 	margin-bottom: 20px;
-	font-family: "Short Stack", cursive;
-	font-weight: bolder;
   }
   .content p {
-	font-family: "Short Stack", cursive;
 	font-size: 15px;
 	padding: 10px;
-	font-weight: bolder;
 	margin-bottom: 20px;
   }
   #home button {
 	width: 130px;
 	height: 30px;
-	border: 3px solid white;
-	box-shadow: 0px 0px 10px grey;
-	border-radius: 50px;
-	font-family: "Rajdhani", sans-serif;
-	font-weight: bolder;
 	font-size: 15px;
   }
   #home::before {
@@ -86,14 +77,10 @@ header {
 	top: 423px;
 	width: 100%;
 	height: 420px;
-	color: rgb(0, 0, 0);
 	text-align: center;
-	z-index: 1;
-	overflow: hidden;
   }
   #services::before {
-	background-attachment: fixed;
-	background-position: -577px -54px;
+	background-position: -577px 0px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -102,8 +89,6 @@ header {
   }
   
   #services h2 {
-	font-family: "Short Stack", cursive;
-	font-weight: bolder;
 	line-height: 45px;
 	font-size: 18px;
   }
@@ -113,22 +98,14 @@ header {
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	overflow: hidden;
   }
   .items1, .items2{
-	border: 2px solid transparent;
 	width: 300px;
 	height: 350px;
-	border-radius: 5px;
-	font-family: "Shadows Into Light", cursive;
 	line-height: 22px;
-	background-color: rgba(255, 255, 255, 0.425);
-	backdrop-filter: blur(30px);
   }
   .items1 p, .items2 p{
 	text-align: center;
-	font-family: "Shadows Into Light", cursive;
-	/* font-weight: bolder; */
 	font-size: 18px;
 	/* width: 170px; */
 	padding: 10px 20px;
@@ -136,31 +113,28 @@ header {
   .items1 img, .items2 img{
 	margin-top: 25px;
 	width: 170px;
-	filter: drop-shadow(7px 7px 7px white) brightness(0.9);
   }
   .items1
   {
-	opacity: 1;
 	position: relative;
 	top: 0px;
 	right: 0px;
-	animation-name: slide1;
+	animation-name: phoneSlide1;
 	animation-duration: 30s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
   }
   .items2
   {
-	opacity: 1;
 	position: relative;
 	top: 0px;
 	right: 0px;
-	animation-name: slide1;
+	animation-name: phoneSlide1;
 	animation-duration: 30s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
   }
-  @keyframes slide1
+  @keyframes phoneSlide1
 {
   from
   {
@@ -295,17 +269,13 @@ header {
 	top: 843px;
 	width: 100%;
 	height: 320px;
-	color: rgb(0, 0, 0);
 	text-align: center;
   }
   #associations h2 {
-	font-family: "Short Stack", cursive;
-	font-weight: bolder;
 	line-height: 60px;
 	font-size: 18px;
   }
   #associations p {
-	font-family: "Short Stack", cursive;
 	line-height: 25px;
 	font-size: 13px;
   }
@@ -317,10 +287,8 @@ header {
 	align-items: center;
   }
   #logos img {
-	border-radius: 35%;
 	width: 90px;
 	margin: 5px 10px;
-	transition: all 0.2s ease-out;
   }
   /* Contact Section Styling */
   #contacts {
@@ -328,28 +296,17 @@ header {
 	top: 1163px;
 	width: 100%;
 	height: 360px;
-	color: rgb(0, 0, 0);
 	text-align: center;
-	z-index: 1;
   }
   #contacts::before {
-	content: "";
-	background-image: url("../images/BG/Spoon BG.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-    background-position: -217px -73px;
+    background-position: -217px 0px;
 	position: absolute;
-	filter: brightness(0.9) contrast(0.9) sepia(0.01);
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
   }
   #contacts h2 {
-	font-family: "Short Stack", cursive;
-	font-weight: bolder;
 	font-size: 18px;
 	text-align: center;
 	margin-left: 0px;
@@ -372,55 +329,14 @@ header {
 	padding-left: 10px;
   }
   #formField label {
-	font-family: "Rajdhani", sans-serif;
-	font-weight: bolder;
 	font-size: 17px;
   }
   .userinput {
-	font-family: "Rajdhani", sans-serif;
-	font-weight: bolder;
 	width: 320px;
 	height: 35px;
 	margin: 5px;
-	border: none;
-	background: none;
-	border-bottom: 3px solid black;
 	padding: 0px 35px;
 	font-size: 15px;
-	outline: none;
-	background-color: transparent;
-  }
-  #userName {
-	background: url("../images/Socials/Username Icon.png") no-repeat left;
-	background-size: 17px;
-	background-position-x: 7px;
-  }
-  #userEmail {
-	background: url("../images/Socials/Email Icon.png") no-repeat left;
-	background-size: 17px;
-	background-position-x: 7px;
-  }
-  #userAddress {
-	background: url("../images/Socials/Address Icon.png") no-repeat left;
-	background-size: 19px;
-	background-position-x: 7px;
-  }
-  .userinput::placeholder {
-	font-family: "Rajdhani", sans-serif;
-	font-weight: bolder;
-	color: rgba(255, 255, 255, 0.719);
-  }
-  .userinput:focus::placeholder {
-	outline: none;
-	color: rgba(255, 255, 255, 0.425);
-  }
-  #formField button {
-	font-family: "Rajdhani", sans-serif;
-	font-weight: bolder;
-	border: 2px solid white;
-	color: black;
-	border-radius: 4px;
-	background-color: white;
   }
   #socialMedia {
 	display: flex;
@@ -439,14 +355,8 @@ header {
   footer {
 	position: absolute;
 	top: 1525px;
-	/* background-color: #F8D8DB; */
-	background-color: #de6525;
-	background-color: #f69c14;
-	background-color: #55a0b4;
-	background-color: #7fcff1;
 	width: 100%;
 	height: 70px;
-	color: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -456,6 +366,5 @@ header {
 	font-family: arial;
 	text-align: center;
 	font-size: 10px;
-	color:rgb(39, 39, 39);
   }
   
